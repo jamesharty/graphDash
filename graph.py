@@ -16,24 +16,8 @@ animals = Animal.query.all()
 #################################
 ############ Nav Bar ############
 #################################
-navbar = dbc.NavbarSimple(
-    children=[
-        dbc.NavItem(dbc.NavLink("Home", href="#")),
-        dbc.DropdownMenu(
-            nav=True,
-            in_navbar=True,
-            label="Menu",
-            children=[
-                dbc.DropdownMenuItem("Entry 1"),
-                dbc.DropdownMenuItem("Entry 2"),
-                dbc.DropdownMenuItem("Entry 3"),
-            ],
-        ),
-    ],
-    brand="",
-    brand_href="#",
-    sticky="top",
-)
+from navbar import Navbar
+navbar = Navbar()
 
 ##############################
 ############ Body ############
