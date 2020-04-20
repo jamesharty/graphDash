@@ -70,7 +70,7 @@ body = dbc.Container([
     ]),
 ])
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
 app.layout = html.Div([navbar,body])
 ##################################################
 ############ Check Number Of Siblings ############
